@@ -1,0 +1,59 @@
+{
+  "sample_applications": [
+    {
+      "applicant_id": "APP001",
+      "age": 35,
+      "income": 85000,
+      "employment_type": "Salaried",
+      "credit_score": 750,
+      "loan_amount": 200000,
+      "loan_tenure_months": 60,
+      "existing_liabilities": 30000,
+      "location": "New York"
+    },
+    {
+      "applicant_id": "APP002",
+      "age": 28,
+      "income": 120000,
+      "employment_type": "Self-Employed",
+      "credit_score": 680,
+      "loan_amount": 300000,
+      "loan_tenure_months": 84,
+      "existing_liabilities": 75000,
+      "location": "California"
+    },
+    {
+      "applicant_id": "APP003",
+      "age": 45,
+      "income": 150000,
+      "employment_type": "Government",
+      "credit_score": 800,
+      "loan_amount": 250000,
+      "loan_tenure_months": 60,
+      "existing_liabilities": 50000,
+      "location": "Texas"
+    },
+    {
+      "applicant_id": "APP004",
+      "age": 32,
+      "income": 55000,
+      "employment_type": "Salaried",
+      "credit_score": 620,
+      "loan_amount": 150000,
+      "loan_tenure_months": 84,
+      "existing_liabilities": 45000,
+      "location": "Florida"
+    },
+    {
+      "applicant_id": "APP005",
+      "age": 29,
+      "income": 95000,
+      "employment_type": "Business",
+      "credit_score": 700,
+      "loan_amount": 180000,
+      "loan_tenure_months": 72,
+      "existing_liabilities": 60000,
+      "location": "New York"
+    }
+  ]
+}

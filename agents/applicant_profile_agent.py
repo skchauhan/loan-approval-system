@@ -87,7 +87,7 @@ def calculate_income_stability(
         )
         if successful_apps > 0:
             score += min(15, successful_apps * 5)
-
+    print(f"income stability {min(score / 100.0, 1.0)}")
     return min(score / 100.0, 1.0)
 
 

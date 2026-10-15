@@ -34,8 +34,14 @@ class ApplicantProfileResponse(BaseModel):
 
 class FinancialRiskResponse(BaseModel):
     debt_to_income_ratio: float
+    dti_risk_level: str
     credit_score_risk_level: str
-    loan_amount_risk: str
+    loan_validation: Dict[str, Any]
+    location_risk: Dict[str, Any]
+    age_eligible: bool
+    fraud_detected: bool
+    fraud_score: float
+    fraud_indicators: list
     anomaly_detected: bool
     anomaly_details: str
     reasoning: str

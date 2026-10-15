@@ -9,7 +9,7 @@ def make_loan_decision(state: Dict[str, Any]) -> Dict[str, Any]:
     """Make final loan decision using DecisionSynthesis MCP server."""
     logger.info(f"Making loan decision for {state['applicant_id']}")
 
-    decision_server = DecisionSynthesisServer()
+    # decision_server = DecisionSynthesisServer()
 
     applicant_profile = state.get("applicant_profile", {})
     financial_risk = state.get("financial_risk", {})
@@ -51,8 +51,13 @@ def determine_classification(
         financial_risk.get("anomaly_detected", False),
         financial_risk.get("credit_score_risk_level") == "Very High",
         applicant_profile.get("employment_risk") == "Critical",
-        state.get("credit_score", 0) < 300,
+        state.get("credit_score", 0) < 300
     ]
+    # print(f"reject_triggers: {financial_risk.get('anomaly_detected'),
+    #                           financial_risk.get('credit_score_risk_level'),
+    #                           applicant_profile.get('employment_risk')
+    #     } \n")
+    print(f"Reject reson: {reject_triggers}, credit_score: {state.get("credit_score", 0)}")
 
     if any(reject_triggers):
         return "Reject"

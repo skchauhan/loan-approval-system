@@ -11,7 +11,7 @@ def execute_compliance_action(state: Dict[str, Any]) -> Dict[str, Any]:
     """Execute compliance action based on decision."""
     logger.info(f"Executing compliance action for {state['applicant_id']}")
 
-    notification_server = NotificationSystemServer()
+    # notification_server = NotificationSystemServer()
 
     decision = state.get("final_decision", "Review")
 

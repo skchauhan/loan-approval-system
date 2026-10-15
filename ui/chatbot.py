@@ -259,6 +259,7 @@ def main():
                     }
 
                     result = submit_application(application_data)
+                    print(f"Final result... {result}")
 
                     if result:
                         st.session_state.current_case = result
@@ -336,7 +337,6 @@ def main():
         """
         ---
         **Multi-Agent Agentic AI Loan Approval System**
-        - 🤖 Powered by LangGraph & Claude AI
         - 🔄 Multi-agent orchestration with specialized domains
         - 📊 Real-time decision analysis
         - ✅ Explainable AI outputs

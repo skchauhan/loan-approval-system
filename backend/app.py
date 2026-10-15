@@ -86,6 +86,9 @@ async def analyze_application(
 
         result = orchestrator.invoke(application_data)
 
+        print(f"API result: {result} *******")
+
+
         response = FinalDecisionResponse(
             case_id=result.get("case_id", ""),
             applicant_id=result.get("applicant_id", ""),
